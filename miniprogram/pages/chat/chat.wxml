@@ -1,0 +1,14 @@
+
+
+<form bindsubmit="onSubmit" class="input-form">
+  <view class="input-wrapper">
+  <view class="input_container">
+    <input class="input" type="text" placeholder="请输入内容"/>
+  </view>
+  <view class="submit-button-container">
+     <button class="submit-button" form-type="submit">提交</button>
+     </view>
+  </view>
+ 
+</form>
+

@@ -1,0 +1,85 @@
+<!-- <
+  还有个问题 ：
+    1. 数据怎么传到下一个页面
+    2.将id设为全局变量
+> -->
+
+<view class="container_mian">
+  <!-- <image src="../../images/编辑.png"> 2 </image> -->
+  <view class="void_break"></view>
+  <view class="card">
+    <view>
+      <!-- <open-data type="userAvatarUrl"></open-data> -->
+      <view class="show_item_btd">
+      <image src="{{headshot }}" class="show_pic" style="margin-left: 5px;"></image> 
+      <view class="show_item">
+        <text class="show_name" style="margin-left: 15px;">姓名：{{name_info}}</text>
+        <text class="show_sex" style="margin-left: 15px;" > {{gender}}</text>
+        <view></view>
+        <text class="show_sign" style="margin-left: 15px;"> | {{motto_info}}</text>
+        </view>
+      </view>
+      <view class="show_sick_block"></view>
+        <view class="show_sick" >
+          <view>
+            <text style="font-size: medium;">新增患者：</text> 
+            <text style="color: rgb(251, 255, 0); font-size: medium;" >{{patient_new_num}}</text>
+          </view>
+          <view>
+            <text style="font-size: medium;"> 待回复：</text> 
+            <text style="color: rgb(245, 248, 46); font-size: medium;" >{{patient_reply}}</text>
+          </view>
+          <view>
+            <text style="font-size: medium;">现有患者：</text> 
+            <text style="color: rgb(251, 255, 0); font-size: medium;" >{{patient_sum_num}}</text>
+          </view>
+
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="allbtn">
+  <view class="btn_item" >
+    <image class="btn_image"  src="../../images/药箱.png" bindtap="to_prescribe"></image>
+    <text class="btn_text">开处方</text>
+  </view>
+  <view class="btn_item">
+    <image class="btn_image" src="../../images/卡片.png" bindtap="to_chat"></image>
+    <text class="btn_text">我的病例</text>
+  </view>
+  <view class="btn_item">
+    <image class="btn_image" src="../../images/卡片.png"></image>
+    <text class="btn_text">前沿文章</text>
+  </view>
+</view >
+<view style="height: 20px;"></view>
+<!-- <今日待办> -->
+<view class="backlog_container">
+  <view style="display: flex;   align-items: center;"  >
+    <view class="backlog_name" style="margin-top: 0px; margin-left: 10px;"> 今日待办</view>  
+    <view class="vertical_line"></view>
+    <text class="backlog_text" >{{todo_item}}</text>
+  </view>
+</view>
+<view class="case">
+  <view style="display: flex;">
+    <text class="cast_title" style="margin-right: auto;">最新病历</text>
+    <text class="cast_title" style="font-size: medium; margin-right: 5%;"> 查看全部></text>
+  </view>
+</view>
+
+
+<!-- 今日病例 -->
+<view>
+  <view class="case_container" wx:for="{{List}}">
+  <view class="case_info" bindtap="to_medical" data-id="{{item.id}}">
+      <text class="case_name">姓名：{{item.name}}</text>
+      <text class="case_sex">性别：{{item.gender}}</text>
+    </view>
+  <view class="case_describe">
+      <text> {{item.condition_description}}</text>
+  </view>
+  </view>
+</view>

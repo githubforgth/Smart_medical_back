@@ -1,0 +1,219 @@
+	
+.tab {
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+  padding: 10rpx 0;
+}
+ 
+.topTabSwiper {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  zoom: 1;
+}
+ 
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+ 
+.tabBorer {
+  border-bottom: 1px solid #f00;
+  color: #f00;
+}
+ 
+.swiper {
+  width: 100%;
+}
+ 
+.swiper_con {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 80rpx 0;
+}
+.container {
+  background-color: #F2f2f2;
+}
+
+.swiper_box {
+  width: 100%;
+}
+
+swiper-item image {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+.card{
+  width: 90%;
+  margin-left: 5%;
+  height: 230rpx;
+  background: dodgerblue;
+  border-radius: 20rpx;
+  box-shadow: 5px 5px 5px #cdcfcf;
+  z-index: 2;
+ }
+ .void_break{
+   height: 100px;
+ }
+.show_pic{
+  display: flexbox;
+  background-color: ivory;
+  border-radius: 50%; 
+  height: 120rpx;  
+  width: 120rpx;
+}
+.show_item{
+  display: inline-block;
+  left: 10px;
+  line-break:auto;
+  line-height: 30px;
+}
+.show_item_btd{
+  padding-top: 20rpx;
+  display:flex;
+  flex-direction: row;
+  /* justify-content:space-around ; */
+  column-width: 500px;
+}
+.line {
+  background-color: rgb(228, 237, 247);
+  height: 2rpx;
+  width: 100%;
+}
+.show_name{
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+}
+.show_sex{
+  font-size: medium;
+  color: #ffffff;
+}
+.show_sign{
+  font-size: 16px;
+  color: #ffffff;
+}
+.show_sick_block{
+  height: 10px;
+}
+.show_sick{
+  height: 20px;
+  color: white;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.allbtn{
+  padding-top: 20rpx;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.btn_item{
+  width: 150rpx;
+  display: flex;   
+  align-items:center;   
+  flex-direction: column; 
+  padding-right: 60rpx;
+  align-self: center;
+}
+.btn_image{
+  width: 70rpx;      
+  height: 70rpx;
+}
+.btn_text{
+  margin-top: 0rpx;              
+  font-size: 28rpx;
+  color: gray;
+  display: flex;                 
+}
+
+.backlog_container{
+  width: 90%;
+  height: 70px;
+  margin-left: 5%;
+  background: rgb(245, 248, 255);
+  border-radius: 20rpx;
+  box-shadow: 3px 3px 3px #cdcfcf;
+  z-index: 2;
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  flex-direction: row;
+  align-items: center;
+}
+.vertical_line{
+  align-items: center;
+  align-items: center;
+  width: 3px;
+  height: 40px;
+  background: rgb(50, 104, 205);
+}
+.backlog_name{
+  margin-left: 20px;
+  /* margin-top: 10px; */
+  font-size: large;
+  width: 50px;
+  /* font-weight: bold; */
+}
+.backlog_text{
+  color:rgb(48, 48, 48);
+  font-size: 17px;
+  margin-left: 10px;
+}
+.case{
+  margin-top: 30px;
+  margin-left: 5%;
+}
+.cast_title{
+  font-size: large;  
+}
+.case_list{
+
+}
+
+.case_container{
+  width: 90%;
+  margin-top: 15px;
+  margin-left: 5%;
+  height: 300rpx;
+  padding-top: 5%;
+  background: rgb(247, 251, 255);
+  border-radius: 20rpx;
+  box-shadow: 3px 3px 3px #e7e7e7;
+  z-index: 2;
+}
+.case_info{
+  display: flex;
+  height: 20%;
+  width: 90%;
+  margin: 1% 3%;
+  text-align: justify;
+}
+
+.case_name{
+  font-size: large;
+  font-weight: 550;
+}
+.case_sex{
+  font-size: medium;
+  margin-left: 15%;
+  font-weight: 550;
+  color: rgb(83, 83, 83);
+}
+.case_describe{
+  margin-top: 1%;
+  margin-left: 8%;
+  width: 90%;
+  max-height: 30%;
+  font-size: medium;
+  display: inline;
+}
+.title_medical{
+  font-size: 18px;
+  font-weight: 100px;
+}

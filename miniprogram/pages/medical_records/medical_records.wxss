@@ -1,0 +1,43 @@
+/* pages/medical_records/medical_records.wxss */
+.medical_detail{
+  display: inline;
+  
+}
+.basic_info{
+  line-height: 60rpx;
+  font-size: larger;
+  display: inline;
+}
+.line-before {
+  position: relative;
+  margin: 5%;
+}
+
+.line-before::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  width: 2px;
+  height: 20px;
+  background-color: #333;
+  transform: translateY(-50%);
+}
+.basic_info_container{
+  display: flex;
+  flex-direction: column;
+}
+.show_description{
+  display: flex;
+  margin-left: 5%;
+  border: solid 1px rgb(0, 0, 0);
+  padding: 3% 5%;
+  min-height: 300rpx;
+  width: 80%;
+  border-width: 1px;
+  border-radius: 20rpx;
+}
+.page-body{
+  font-size: large;
+
+}

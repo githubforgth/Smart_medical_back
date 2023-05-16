@@ -1,0 +1,44 @@
+<view class="container_min"></view>
+<view class="basic_info_container">
+  <view class="basic_info">
+    <span class="line-before">姓名：{{medical_info.name}}</span>
+  </view>
+  <view class="basic_info">
+  <span class="line-before">性别：{{medical_info.gender}}</span>
+  </view>
+  <view class="basic_info">
+  <span class="line-before">年龄：{{medical_info.age}}岁</span>
+  </view>
+  <view class="basic_info">
+  <span class="line-before">联系方式：{{medical_info.contact_info}}</span>
+  </view>
+</view>
+<view style="border-top: 1rpx solid rgb(0, 0, 0); margin-top: 20rpx; margin-block-end: 20rpx; width: 80%; margin-left: 10%;"></view>
+<!-- <用大框> -->
+<scroll-view scroll-y class="show_description">
+  <text style="font-size: large;  font-weight: 400;">病情描述：</text>
+  <view style="height: 20rpx;"></view>
+  <text class="page-body">{{medical_info.condition_description}}</text>
+</scroll-view>
+<view style="height: 20rpx;"></view>
+<scroll-view scroll-y class="show_description">
+  <text style="font-size: large;  font-weight: 400;">病史描述：</text>
+  <view style="height: 20rpx;"></view>
+  <text class="page-body">{{medical_info.medical_history}}</text>
+</scroll-view>
+<view style="height: 20rpx;"></view>
+<scroll-view scroll-y class="show_description">
+  <text style="font-size: large;  font-weight: 400;">过敏史：</text>
+  <view style="height: 20rpx;"></view>
+  <text class="page-body">{{medical_info.allergy_history}}</text>
+</scroll-view>
+  <!-- <view class="medical_detail">
+    <text>姓名：{{medical_info.name}}</text>
+    <text>性别：{{medical_info.gender}}</text>
+    <text>年龄：{{medical_info.age}}</text>
+    <text>联系方式：{{medical_info.contact_info}}</text>
+    <text>病情描述：{{medical_info.condition_description}}</text>
+    <text>历史病史：{{medical_info.medical_history}}</text>
+    <text>过敏史：{{medical_info.allergy_history}}</text>
+  </view> -->
+

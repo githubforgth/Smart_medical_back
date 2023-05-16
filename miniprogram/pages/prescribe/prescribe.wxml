@@ -1,0 +1,28 @@
+<view style="display: inline;">
+<view class="container_put" style="height: 50px;"></view>
+<view style="height: 150px;">
+<view class="container_put" >
+<view style="display: flex;">
+  <text>患者名：</text>
+  <view class="search-bar">
+    <input placeholder="输入关键词搜索" bindinput="onSearchInput" />
+  </view>
+</view>
+<scroll-view scroll-y="true" bindscrolltolower="onLoadMore" class="show_sercher">
+  <!-- 显示搜索结果 -->
+  <block wx:for="{{searchResult}}" wx:key="index">
+    <view style="border-bottom: 1px black;">{{item}}</view>
+  </block>
+</scroll-view>
+</view>
+</view>
+
+<view class="container_put">
+<input placeholder="请输入诊断结果" />
+</view>
+<view class="container_put">
+<text class="title"> 药方</text>
+<input placeholder="请输入药方"/>
+</view>
+</view>
+<button form-type="submit" style="font-size: 30px; background: rgb(163, 195, 255); border-radius: 20px; color: #fff;">submit</button>

@@ -1,0 +1,25 @@
+<view class="container_min"></view>
+<view>
+    <view class="item"> 
+          <view>  头像：</view>
+        <view style="justify-self: flex-end;">
+           <image  class="show_pic" src="{{user.headshot}}"></image>
+        </view>
+    </view>
+  <view class="item">
+    <view >姓名：</view>
+    <view>{{user.name}}</view>
+  </view>
+  <view class="item">
+    <view >性别：</view>
+    <view>{{user.gender}}</view>
+  </view>
+  <view class="item">
+    <view >职称：</view>
+    <view>{{user.title}}</view>
+  </view>
+  <view class="item">
+    <view >科室：</view>
+    <view>{{user.department}}</view>
+  </view>
+</view>

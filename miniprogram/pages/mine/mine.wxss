@@ -1,0 +1,65 @@
+.doctor_show_card{
+  height: 60%;
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  background-color: dodgerblue;
+  border-radius: 20rpx;
+  box-shadow: 5px 5px 5px #cdcfcf;
+  margin-top: 25%;
+}
+.doctor_img{
+  margin: 3%;
+  display: flexbox;
+  background-color: ivory;
+  border-radius: 50%; 
+  height: 70%;  
+  width: 25%;
+}
+.doctor_init{
+  display: inline;
+  margin: 5%;
+}
+.doctor_info{
+  display: flex;
+  margin-top: 5%;
+  justify-content: center
+}
+.doctor_name{
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  /* font-weight: bold; */
+  letter-spacing: 1px;
+}
+.doctor_position{
+  font-size: medium;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.text_block{
+height: 10px;
+}
+.edit{
+  right: 10px;
+  height: 20px;
+  width: 20px;
+  src:url(../../images/编辑.png);
+}
+.boundary{height: 10px; width: 100%; background-color: rgba(245,245,245,1); }
+.user-bbs-info-container{width: 100%; background-color: rgba(255,255,255,1); }
+.user-post-wrap{width: auto; height: 49px; padding: 12px 15px 12px 0px; display: flex; margin-left: 15px; border-width: 1px; }
+.user-arrow-wrap{height: 100%; width: 7px; padding: 9px 5px 9px 0px; text-align: right;position:absolute; right:15px; }
+.user-info-arrow{width: 7px; height: 7px; border-width: 1px; border-color: rgb(136, 136, 136); border-style: none solid solid none; }
+.user-post-text-wrap{display: inline-block; height: 25px; position: static; padding-top: 2px; padding-bottom: 2px; }
+.user-text{position: static; font-size: 1rem; line-height: 100%;  margin-left: 20px;}
+
+.opt_item{
+  /* margin: 5%; */
+  margin-top: 10px;
+  margin-left: 10%;
+  display: flex;
+  height: 30px;
+}
+.opt_text{
+  font-size: large;
+}

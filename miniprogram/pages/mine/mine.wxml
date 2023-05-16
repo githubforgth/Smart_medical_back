@@ -1,0 +1,41 @@
+<view class="container_mian">
+  <view class="doctor_show_card">
+    <image src="{{headshot}}" class="doctor_img" style="color: rgb(255, 255, 255);"></image>
+    <view class="doctor_init">
+      <view class="doctor_info">
+        <text class="doctor_name">{{name_info}}</text>
+        <text class="doctor_position" >主任</text> 
+      </view>
+    <view class="text_block"></view>
+    <text  style="color: #fff;">山东协和</text>
+  </view>
+<image class="edit" ></image>
+</view>
+</view>
+
+<!-- <block class="opt">
+  <view class="opt_item">
+    <text class="opt_text"> hello </text>
+  </view>
+</block> -->
+<view class="boundary"/>
+    <view class="user-bbs-info-container">
+        <view class="user-post-wrap">
+            <view class="user-post-icon"/>
+            <view class="user-post-text-wrap">
+                <text class="user-text">我的认证</text>
+            </view>
+            <view class="user-arrow-wrap">
+                    <view class="user-info-arrow"/>
+            </view>
+        </view>
+        <view class="user-post-wrap">
+            <view class="user-post-icon"/>
+            <view class="user-post-text-wrap" bindtap="to_settings">
+                <text class="user-text" >设置</text>
+            </view>
+            <view class="user-arrow-wrap">
+                    <view class="user-info-arrow"/>
+            </view>
+        </view>
+    </view>

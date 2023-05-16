@@ -1,0 +1,29 @@
+/* pages/person-info-settings/person-info-setting.wxss */
+.item{
+  display: flex;
+  border-style:groove;
+  border-top:1rpx rgb(175, 175, 175);
+  border-left: 1rpx ;
+  border-right: 1rpx;
+  /* box-shadow: 3rpx 5rpx rgb(153, 153, 153); */
+  max-height: 80px;
+  min-height: 60px;
+  width: 85%;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-items: center;
+  align-items: center;
+  flex-direction: row;
+  align-content: center ;
+  justify-content: space-between;
+  padding-right: 5%;
+  font-size: large;
+}
+.show_pic{
+  margin-right: 5%;
+  display: flexbox;
+  background-color: ivory;
+  border-radius: 50%; 
+  height: 120rpx;  
+  width: 120rpx;
+}
