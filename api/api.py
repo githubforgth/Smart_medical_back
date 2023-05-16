@@ -227,7 +227,7 @@ def chat_submit():
     id_1 = request.args.get("id_1")
     id_2 = request.args.get("id_2")
     massage = request.args.get("massage")
-    data = datetime.time()
+    data = datetime.now()
     columns = sql.get_head("messages")
     sql_l = f"INSERT INTO messages ({', '.join(columns)}) VALUES ({id_1}, {id_2}, {massage}, {data})"
     cursor.execute(sql_l)
