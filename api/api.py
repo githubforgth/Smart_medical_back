@@ -61,7 +61,9 @@ def medical_info():
            "contact_info": response[4],
            "condition_description": response[5],
            "medical_history": response[6],
-           "allergy_history": response[7]
+           "allergy_history": response[7],
+           "situation":response[8],
+
            }
     print(res)
     return jsonify(res)
@@ -100,6 +102,7 @@ def show_media_recorder():
                          "station": temp_media[8],
                          "medical": temp_media[9]
                          })
+    print(response)
     return jsonify(response)
 
 
@@ -209,7 +212,7 @@ def show_massage():
 
 
 def chat_massage():
-    cnx = mysql.connector.connect(** api.config.db_config)
+    cnx = mysql.connector.connect(**api.config.db_config)
     cursor = cnx.cursor()
     id_1 = request.args.get("id")
     id_2 = request.args.get("id_2")
@@ -222,21 +225,41 @@ def chat_massage():
 
 
 def chat_submit():
-    cnx = mysql.connector.connect(** api.config.db_config)
+    cnx = mysql.connector.connect(**api.config.db_config)
     cursor = cnx.cursor()
     id_1 = request.args.get("id_1")
     id_2 = request.args.get("id_2")
     massage = request.args.get("massage")
-    data = datetime.now()
+    now = datetime.datetime.now()
     columns = sql.get_head("messages")
-    sql_l = f"INSERT INTO messages ({', '.join(columns)}) VALUES ({id_1}, {id_2}, {massage}, {data})"
+    print(columns, id_1, id_2, massage, now)
+    sql_l = f"INSERT INTO messages ({', '.join(columns)}) VALUES ({id_1}, {id_2}, '{massage}', '{now}', '{0}')"
+    print(sql_l)
     cursor.execute(sql_l)
     cnx.commit()
     cnx.close()
     cursor.close()
     if cursor.rowcount == 0:
-        return False
+        return jsonify({"state": False})
     else:
-        return True
+        return jsonify({"state": True})
 
 
+def show_media_recorder_all():
+    # sql = Sql_Operation()
+    res = sql.search_all('medical_records')
+    response = []
+    print(res)
+    for media in range(len(res)):
+        temp_media = res[media]
+        response.append({"id": temp_media[0],
+                         "name": temp_media[1],
+                         "gender": temp_media[2],
+                         "age": temp_media[3],
+                         "contact_info": temp_media[4],
+                         "condition_description": temp_media[5],
+                         "medical_history": temp_media[6],
+                         "station": temp_media[8],
+                         "medical": temp_media[9]
+                         })
+    return jsonify(response)

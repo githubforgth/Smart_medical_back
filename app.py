@@ -41,6 +41,12 @@ def show_media_recorder():
     return response
 
 
+@app.route("/show_medical_all")
+def show_media_recorder_all():
+    response = api.show_media_recorder_all()
+    return response
+
+
 # 返回病历
 @app.route("/medical_info")
 def medical_info():
